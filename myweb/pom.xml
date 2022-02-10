@@ -7,14 +7,7 @@
 		<artifactId>springboot-practices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>helloworld</artifactId>
-
-	<properties>
-		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
-		<project.reporting.outputEncodnig>utf-8</project.reporting.outputEncodnig>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
-	</properties>
+	<artifactId>myweb</artifactId>
 
 	<dependencyManagement>
 		<dependencies>
@@ -35,6 +28,24 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
+		<!-- spring boot web starter -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+		<!-- tomcat jasper(제에스피로 바궈주는 -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+
 		<!-- spring boot test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -45,7 +56,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>helloworld</finalName>
+		<finalName>myweb</finalName>
 		<plugins>
 			<!-- 스프링 부트 메이븐 플러그인 -->
 			<plugin>
@@ -54,4 +65,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
 </project>

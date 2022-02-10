@@ -7,8 +7,8 @@
 		<artifactId>springboot-practices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>helloworld</artifactId>
-
+	<artifactId>myapplication</artifactId>
+	
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncodnig>utf-8</project.reporting.outputEncodnig>
@@ -53,5 +53,5 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	</build>
+	</build>	
 </project>
